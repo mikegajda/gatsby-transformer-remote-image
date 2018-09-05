@@ -109,8 +109,10 @@ const createRemoteimageNode = async ({
   createNodeId
 }) => {
   try {
+    let randomNumber = Math.floor(Math.random() * 100);
+    let randomizedUrl = url + "?" + randomNumber.toString();
     const fileNode = await createRemoteFileNode({
-      url: url,
+      url: randomizedUrl,
       store,
       cache,
       createNode,
@@ -118,7 +120,7 @@ const createRemoteimageNode = async ({
     });
 
     if (!fileNode) {
-      throw new Error(`Remote file node is null`, metadata.image);
+      throw new Error(`Remote file node is null`);
     }
 
     const remoteimageNode = {
