@@ -1,0 +1,32 @@
+{
+  "name": "gatsby-transformer-remote-image",
+  "description": "Gatsby plugin to downloading a remote image referenced in the frontmatter of a MarkdownRemark nodes",
+  "version": "2.0.0-rc.1",
+  "author": "Mike Gajda <npm@mikegajda.com>",
+  "bugs": {
+    "url": "https://github.com/mikegajda/gatsby-transformer-remote-image"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "cross-env": "^5.1.4"
+  },
+  "homepage": "https://github.com/mikegajda/gatsby-transformer-remote-image",
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "remote-image"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "peerDependencies": {
+    "gatsby": ">2.0.0-alpha"
+  },
+  "repository": "https://github.com/mikegajda/gatsby-transformer-remote-image",
+  "scripts": {
+    "build": "babel src --out-dir . --ignore **/__tests__",
+    "prepare": "cross-env NODE_ENV=production npm run build",
+    "watch": "babel -w src --out-dir . --ignore **/__tests__"
+  }
+}
