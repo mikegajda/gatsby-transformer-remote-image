@@ -1,6 +1,6 @@
 # gatsby-transformer-remote-image
 
-Looks for `MarkdownRemark` nodes that have a `remoteImage` property. If that is found, it will try to download the image and add it as a childRemoteimage node of the original MarkdownRemark node (additing it directly to frontmatter was tricky). Use it for things like adding Pixabay images to your Markdown posts
+Looks for `MarkdownRemark` nodes that have a `remoteImage` property. If that is found, it will try to download the image and add it as a childRemoteimage node of the original MarkdownRemark node. Use it for things like adding Pixabay images to your Markdown posts, linking to Instagram posts, etc.
 
 # Installation
 `npm install --save gatsby-transformer-remote-image`
