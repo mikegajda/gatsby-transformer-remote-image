@@ -118,7 +118,7 @@ const createRemoteimageNode = async ({
     })
 
     if (!fileNode) {
-      throw new Error(`Remote file node is null`, metadata.image)
+      throw new Error(`Remote file node is null`)
     }
 
     const remoteimageNode = {
