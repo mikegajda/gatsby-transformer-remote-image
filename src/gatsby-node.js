@@ -123,9 +123,9 @@ const createRemoteimageNode = async ({
     })
 
 
-    if (!fileNode) {
-      throw new Error(`Remote file node is null`)
-    }
+    // if (!fileNode) {
+    //   throw new Error(`Remote file node is null`)
+    // }
 
     const remoteimageNode = {
       id: createNodeId(`${parent} >>> Remoteimage`),
