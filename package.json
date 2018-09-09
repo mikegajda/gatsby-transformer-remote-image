@@ -1,7 +1,7 @@
 {
   "name": "gatsby-transformer-remote-image",
   "description": "Gatsby plugin to downloading a remote image referenced in the frontmatter of a MarkdownRemark nodes",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "author": "Mike Gajda <npm@mikegajda.com>",
   "bugs": {
     "url": "https://github.com/mikegajda/gatsby-transformer-remote-image"
