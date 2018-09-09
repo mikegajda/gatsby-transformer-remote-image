@@ -109,10 +109,12 @@ const createRemoteimageNode = async ({
   createNodeId
 }) => {
   try {
-    let randomNumber = Math.floor(Math.random() * 100);
-    let randomizedUrl = url + "?" + randomNumber.toString();
+    // let randomNumber = Math.floor(Math.random() * 100);
+    // let ext = url.split(".").slice(-1)[0]
+    // let randomizedUrl = url + "?v=" + randomNumber.toString() + "." + ext;
+    // console.log("randomizedUrl", randomizedUrl)
     const fileNode = await createRemoteFileNode({
-      url: randomizedUrl,
+      url,
       store,
       cache,
       createNode,
