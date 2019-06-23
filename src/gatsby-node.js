@@ -72,7 +72,7 @@ exports.onCreateNode = async ({
     if (!node.frontmatter.remoteImage) {
       return
     }
-    console.log("has remoteImage")
+    console.info("has remoteImage")
   }
 
   const remoteimageNode = await new Promise((resolve, reject) => {
