@@ -77,7 +77,7 @@ exports.onCreateNode = async ({
       return;
     }
 
-    console.log("has remoteImage");
+    console.info("has remoteImage");
   }
 
   const remoteimageNode = await new Promise((resolve, reject) => {
